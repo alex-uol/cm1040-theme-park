@@ -3,50 +3,60 @@
 
 <head>
     <title>Attractions - Theme Park</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="description"
-        content="Dive into a world of exhilarating rides and captivating attractions at our theme park. From adrenaline-pumping roller coasters to magical themed areas and live entertainment, explore all we have to offer.">
+        content="Dive into a world of exhilarating rides and captivating attractions at our theme park. From adrenaline-pumping roller coasters to magical themed areas and live entertainment, explore all we have to offer." />
     <meta name="keywords"
-        content="Theme Park Attractions, Roller Coasters, Family Rides, Thrill Rides, Children's Attractions, Water Rides, Themed Areas">
-    <meta name="authors" content="cm1040, team 45, tutor group 6">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="refresh" content="600">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/attractions.css">
+        content="Theme Park Attractions, Roller Coasters, Family Rides, Thrill Rides, Children's Attractions, Water Rides, Themed Areas" />
+    <meta name="authors" content="cm1040, team 45, tutor group 6" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="refresh" content="600" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/attractions.css" />
 </head>
 
 <body>
     <h1>Attractions</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#Tickets">Tickets</a>
-            <a href="attractions.html">Attractions</a>
-            <a href="events.html">Events</a>
-            <a href="#Help">Help</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-        <p>Check out our list of rides!</p>
-        <img src="img/saucer.jpeg" alt="saucer ride" width="200" height="200">
-        <div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#Tickets" class="disabled">Tickets</a>
+        <a href="attractions.html" class="current">Attractions</a>
+        <a href="events.html">Events</a>
+        <a href="#Help" class="disabled">Help</a>
+        <a href="#Contact" class="disabled">Contact</a>
+    </nav>
+    <p class="subtitle">Check out our list of rides!</p>
+    <section class="attractions">
+        <div class="attraction">
+            <img src="img/saucer.jpeg" alt="saucer ride" width="200" height="200" />
             <h3>The Saucer</h3>
-            <p>Get ready to spin over and over again, remember to not eat before the ride!</p>
+            <p>
+                Get ready to spin over and over again, remember to not eat before the
+                ride!
+            </p>
         </div>
-        <img src="img/rollercoaster.jpeg" alt="rollercoaster" width="200" height="200">
-        <div>
+        <div class="attraction">
+            <img src="img/rollercoaster.jpeg" alt="rollercoaster" width="200" height="200" />
             <h3>Rollercoaster</h3>
             <p>Fast and fun, be prepared to flip upside down!</p>
         </div>
-        <img src="img/skyfall.jpg" alt="skyfall ride" width="200" height="200">
-        <div>
+        <div class="attraction">
+            <img src="img/skyfall.jpg" alt="skyfall ride" width="200" height="200" />
             <h3>Skyfall</h3>
-            <p>Swing over and over in this intense ride, be sure to empty your pockets!</p>
-            </div>
-        <img src="img/tower.jpg" alt="tower ride" width="200" height="200">
-        <div>
-            <h3>The Tower</h3>
-            <p>Climb to the highest point of the park and then plummet all the way back down!</p>
+            <p>
+                Swing over and over in this intense ride, be sure to empty your pockets!
+            </p>
         </div>
+        <div class="attraction">
+            <img src="img/tower.jpg" alt="tower ride" width="200" height="200" />
+            <h3>The Tower</h3>
+            <p>
+                Climb to the highest point of the park and then plummet all the way back
+                down!
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>
