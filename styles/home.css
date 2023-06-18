@@ -1,1 +1,19 @@
 /* These styles are applied only to the home page */
+
+.events, .attractions {
+    margin-bottom: 4rem;
+}
+
+.events ul {
+    padding-left: 0;
+}
+
+.events li {
+    list-style: none;
+    padding-left: 0rem;
+    margin-bottom: .5rem;
+}
+
+.schedule {
+    font-size: 1.2rem;
+}
