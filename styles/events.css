@@ -1,1 +1,27 @@
 /* These styles are applied only to the events page */
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+
+/* Calendar */
+
+/* Header row */
+.festivals th {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding: 2rem 0 1rem 0;
+}
+
+.festivals td {
+    padding: 10px 0;
+}
+
+/* Dates */
+.festivals td:first-child {
+    font-weight: bold;
+    width: 12rem;
+    vertical-align: top;
+}
