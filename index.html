@@ -17,45 +17,42 @@
 </head>
 
 <body>
-    
     <h1>Adventure World Theme Park</h1>
-    <div>
-        <!--This will become the Logo-->
-        Adventure World
-    </div>
     <img src="img/fp.jpg" alt="FrontPage Rollercoaster">
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#Tickets">Tickets</a>
+        <a href="index.html" class="current">Home</a>
+        <a href="#Tickets" class="disabled">Tickets</a>
         <a href="attractions.html">Attractions</a>
         <a href="events.html">Events</a>
-        <a href="#Help">Help</a>
-        <a href="#Contact">Contact</a>
+        <a href="#Help" class="disabled">Help</a>
+        <a href="#Contact" class="disabled">Contact</a>
         <!--Navbar, Tickets, Help and contact link to themselves-->
     </nav>
-    
-    <section>
+
+    <section class="events">
         <!--Event List and link-->
-        <h2><a href="events.html">Events</a></h2>
+        <h2>Events</h2>
         <ul>
-            <li>July 1st - August 31st: Summer Festival</li>
-            <li>September 1st - 30th: Fall festival</li>
-            <li>October 1st - 31st: Halloween Festival</li>
-            <li>December 1st - 23rd: Christmas Festival</li>
+            <li><b>July 1st - August 31st:</b> Summer Festival</li>
+            <li><b>September 1st - 30th:</b> Fall festival</li>
+            <li><b>October 1st - 31st:</b> Halloween Festival</li>
+            <li><b>December 1st - 23rd:</b> Christmas Festival</li>
         </ul>
+        <a href="events.html">See All</a>
     </section>
-    <section>
+    <section class="attractions">
         <!--attraction link and txt-->
-        <h2><a href="attractions.html">Attractions</a></h2>
-        <p>Find out more about our world-class shows, rollercoasters, restaurants, and more!</p>
+        <h2>Attractions</h2>
+        <p><a href="attractions.html">Find out more</a> about our world-class shows, rollercoasters, restaurants, and
+            more!</p>
     </section>
-    <div>
-        <!--Park schedule txt-->
-        <h3>Open and Close: 09:00 - 20:00 Mon-Fri | 09:00 - 23:00 Sat-Sun</h3>
-    </div>
     <footer>
+        <!--Park schedule txt-->
+        <p class="schedule">Open and Close: 09:00 - 20:00 Mon-Fri | 09:00 - 23:00 Sat-Sun</p>
         <!--Location txt and img-->
-        <div><h4>Location:</h4>Bundesstrasse 12, 6003 Luzern, Switzerland</div>
+        <div>
+            <h4>Location:</h4>Bundesstrasse 12, 6003 Luzern, Switzerland
+        </div>
         <div><img src="img\Location.png" alt="Google maps screenshot"></div>
     </footer>
 </body>
