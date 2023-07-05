@@ -1,5 +1,9 @@
 /* These styles are applied only to the events page */
-
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0C2D48;
+}
 .subtitle {
     font-size: 1.2rem;
 }
@@ -12,11 +16,18 @@
     text-align: left;
     font-size: 1.3rem;
     font-weight: normal;
-    padding: 2rem 0 1rem 0;
+    padding: 10px;
 }
 
 .festivals td {
-    padding: 10px 0;
+    padding: 10px;
+    
+}
+tr{
+    opacity: 0.8;
+}
+tr:hover{
+opacity: 1;
 }
 
 /* Dates */
@@ -24,4 +35,10 @@
     font-weight: bold;
     width: 12rem;
     vertical-align: top;
+}
+
+.festivals{
+    box-sizing: border-box;
+    background-color: #B1D4E0;
+    padding: 10px;
 }
