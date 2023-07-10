@@ -1,11 +1,16 @@
 /* These styles are applied only to the home page */
-h1{
+h1 {
     text-align: center;
     font-size: 2.5rem;
     color: #0C2D48;
 }
-.events, .attractions {
+
+.events,
+.attractions {
+    box-sizing: border-box;
     margin-bottom: 4rem;
+    padding: .1rem 1rem 1rem;
+    min-height: 200px;
 }
 
 .events ul {
@@ -14,56 +19,49 @@ h1{
 
 .events li {
     list-style: none;
-    padding-left: 1rem;
     margin-bottom: .5rem;
 }
 
 .schedule {
     font-size: 1.2rem;
 }
-.events{
-    box-sizing:border-box;
-    background-color:  	#ffe3a0;
-    height: 200px;
-    width: 720px;
-    
+
+.events {
+    background-color: #ffe3a0;
 }
-.events h2, a{
-    padding-left:1rem;
-    padding-top: 5px;
+
+.attractions {
+    background-color: #B1D4E0;
 }
-.attractions{
-    box-sizing:border-box;
-    background-color:#B1D4E0;
-    height: 200px;
-    width: 720px;
-}
-.attractions h2 {
-    padding-left:1rem;
-    padding-top: 5px;
-}
-footer{
+
+footer {
     box-sizing: border-box;
     border-top: .2rem solid gray;
-    padding-left:1rem;
+    padding-left: 1rem;
     padding-top: 5px;
 }
-h4{
+
+footer a.map {
+    display: block;
+}
+
+h4 {
     font-size: 20px;
 }
 
 /* media queries */
 
 
-@media (max-width: 767px){
-    .attractions, .events{
-        width:auto;
-        
+@media (max-width: 767px) {
+
+    .attractions,
+    .events {
+        width: auto;
+
     }
-    .attractions p{
+
+    .attractions p {
         text-align-last: center;
     }
 
 }
-   
-   

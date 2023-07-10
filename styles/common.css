@@ -2,7 +2,6 @@
 
 /* Body size and center content */
 
-
 body {
     max-width: 720px;
     margin: 0 auto;
@@ -15,18 +14,24 @@ img {
 }
 
 /* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&family=Roboto&display=swap');
 
 /* Default */
 body {
     color: #494440;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
     color: #000;
-    font-family: Georgia, Palatino, Baskerville, serif;
+    font-family: 'Gentium Plus', serif;
 }
 
 
@@ -36,15 +41,29 @@ nav {
     border-bottom: .2rem solid gray;
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    /* enable floating menu */
+    position: sticky;
+    background-color: #DEE2FF;
+    z-index: 100;
+    top: 0;
+    /* menu items take all available horizontal space */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
 nav a {
+    text-align: center;
     text-decoration: none;
     margin-right: .3rem;
     padding: .2rem .4rem;
     animation: 3s;
-    color: #494440;
     transition: background-color 400ms, color 400ms;
+}
+
+nav a,
+nav a.disabled:hover {
+    color: #494440;
+    background-color: transparent;
 }
 
 nav a.current {
@@ -64,12 +83,22 @@ nav a:hover {
 /* Disabled pages */
 nav a.disabled {
     cursor: not-allowed;
+    opacity: .6;
 }
-/* media queries*/
-@media (max-width: 767px){
-    body{
+
+
+/* do not display disabled menu items on smaller screen */
+@media (max-width: 767px) {
+    nav a.disabled {
+        display: none;
+    }
+}
+
+
+/* add body padding on mobile */
+@media (max-width: 767px) {
+    body {
         max-width: 95%;
     }
-    
+
 }
-   

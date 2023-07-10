@@ -1,9 +1,10 @@
 /* These styles are applied only to the events page */
-h1{
+h1 {
     text-align: center;
     font-size: 2.5rem;
     color: #0C2D48;
 }
+
 .subtitle {
     font-size: 1.2rem;
 }
@@ -21,13 +22,15 @@ h1{
 
 .festivals td {
     padding: 10px;
-    
+
 }
-tr{
+
+tr {
     opacity: 0.8;
 }
-tr:hover{
-opacity: 1;
+
+tr:hover {
+    opacity: 1;
 }
 
 /* Dates */
@@ -37,7 +40,7 @@ opacity: 1;
     vertical-align: top;
 }
 
-.festivals{
+.festivals {
     box-sizing: border-box;
     background-color: #B1D4E0;
     padding: 10px;

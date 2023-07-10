@@ -1,9 +1,10 @@
 /* These styles are applied only to the attractions page */
-h1{  
+h1 {
     text-align: center;
     font-size: 2.5rem;
     color: #0C2D48;
 }
+
 .subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -41,9 +42,10 @@ h1{
 
 /* div change when hovering */
 
-div{
+div {
     opacity: 0.8;
 }
-div:hover{
+
+div:hover {
     opacity: 1;
 }
